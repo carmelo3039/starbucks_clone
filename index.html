@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Starbucks Brasil - Cafés especiais, bebidas e experiências únicas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Starbucks Brasil | O Melhor Café do Mundo</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/starbucks-nav-logo.svg" alt="Starbucks Logo" width="51" height="51">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop">
+        <ul class="nav-list">
+          <li><a href="/menu">Menu</a></li>
+          <li><a href="/coffee">Nosso Café</a></li>
+          <li><a href="/impact">Impacto Social</a></li>
+        </ul>
+        <div class="nav-utils">
+          <a href="/stories" class="stories-link">
+            <img src="./assets/images/sb-historias-logo.svg" alt="SB Histórias" width="120" height="24">
+          </a>
+          <a href="/locations" class="location-link">
+            <i class="fas fa-location-dot"></i>
+            <span>Encontre uma loja</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" aria-hidden="true">
+      <div class="mobile-header">
+        <a href="index.html" class="mobile-logo">
+          <img src="./assets/images/starbucks-nav-logo.svg" alt="Starbucks Logo" width="51" height="51">
+        </a>
+        <button class="mobile-close" aria-label="Fechar menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/coffee">Nosso Café</a></li>
+        <li><a href="/impact">Impacto Social</a></li>
+      </ul>
+      <div class="mobile-utils">
+        <a href="/stories" class="mobile-stories">
+          <img src="./assets/images/sb-historias-logo.svg" alt="SB Histórias" width="120" height="24">
+        </a>
+        <a href="/locations" class="mobile-location">
+          <i class="fas fa-location-dot"></i>
+          <span>Encontre uma loja</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 992px)" srcset="./assets/images/banner-desktop.jpg">
+        <source media="(min-width: 768px)" srcset="./assets/images/banner-tablet.jpg">
+        <img src="./assets/images/banner-mobile.jpg" alt="Banner Starbucks" class="hero-image">
+      </picture>
+    </section>
+
+    <!-- Featured Cards -->
+    <section class="featured-cards">
+      <article class="card card-text">
+        <div class="card-content">
+          <h2 class="card-title">Uma surpresa refrescante para você</h2>
+          <p class="card-description">Conheça nossa linha de <strong>Cold Brew e Refreshers™</strong></p>
+          <a href="/cold-brew" class="card-button">Saiba mais</a>
+        </div>
+      </article>
+
+      <article class="card card-image">
+        <img src="./assets/images/foto-2.png" alt="Bebida Starbucks" loading="lazy">
+      </article>
+
+      <article class="card card-image">
+        <img src="./assets/images/guatemala.jpg" alt="Café da Guatemala" loading="lazy">
+      </article>
+
+      <article class="card card-text">
+        <div class="card-content">
+          <h2 class="card-title">Coisas boas estão acontecendo</h2>
+          <p class="card-description">Acreditamos que podemos e devemos gerar um impacto positivo nas comunidades em que atuamos.</p>
+          <a href="/impact" class="card-button">Saiba mais</a>
+        </div>
+      </article>
+
+      <article class="card card-text">
+        <div class="card-content">
+          <h2 class="card-title">Histórias e Notícias Starbucks</h2>
+          <p class="card-description">Fique por dentro das novidades e conheça mais sobre nossas iniciativas.</p>
+          <a href="/news" class="card-button">Saiba mais</a>
+        </div>
+      </article>
+
+      <article class="card card-image">
+        <img src="./assets/images/team.jpg" alt="Equipe Starbucks" loading="lazy">
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- About Us -->
+        <div class="footer-section">
+          <h3 class="footer-title">
+            <button class="footer-toggle" aria-expanded="false">Sobre nós</button>
+          </h3>
+          <ul class="footer-links">
+            <li><a href="/about">Nossa empresa</a></li>
+            <li><a href="/coffee">Nosso café</a></li>
+            <li><a href="/customer-service">Atendimento ao cliente</a></li>
+            <li><a href="/reports">Canal de Denúncias</a></li>
+            <li><a href="/conduct">Código de Conduta</a></li>
+          </ul>
+        </div>
+
+        <!-- Career -->
+        <div class="footer-section">
+          <h3 class="footer-title">
+            <button class="footer-toggle" aria-expanded="false">Carreira</button>
+          </h3>
+          <ul class="footer-links">
+            <li><a href="/careers">Central de carreiras</a></li>
+            <li><a href="/share">Compartilhar</a></li>
+            <li><a href="/environment">Meio Ambiente</a></li>
+            <li><a href="/supply">Fornecimento ético</a></li>
+            <li><a href="/stories">Histórias Starbucks</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Impact -->
+        <div class="footer-section">
+          <h3 class="footer-title">
+            <button class="footer-toggle" aria-expanded="false">Impacto Social</button>
+          </h3>
+          <ul class="footer-links">
+            <li><a href="/community">Comunidade</a></li>
+            <li><a href="/environment">Meio Ambiente</a></li>
+            <li><a href="/supply">Fornecimento ético</a></li>
+            <li><a href="/stories">Histórias Starbucks</a></li>
+          </ul>
+        </div>
+
+        <!-- Rewards -->
+        <div class="footer-section">
+          <h3 class="footer-title">
+            <button class="footer-toggle" aria-expanded="false">Starbucks Rewards</button>
+          </h3>
+          <ul class="footer-links">
+            <li><a href="/terms">Termos & Condições do Starbucks</a></li>
+            <li><a href="/rewards-terms">Termos & Condições do Starbucks Rewards</a></li>
+            <li><a href="/gift-card">Termos & Condições do Gift Card</a></li>
+            <li><a href="/promotions">Termos & Condições de Promoções Starbucks</a></li>
+            <li><a href="/app-terms">Termos & Condições Pague e Pegue pelo App</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <a href="https://facebook.com/starbucksbrasil" aria-label="Facebook" target="_blank" rel="noopener">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/starbucksbrasil" aria-label="Instagram" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/starbucksbrasil" aria-label="Twitter" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://youtube.com/starbucksbrasil" aria-label="YouTube" target="_blank" rel="noopener">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+
+      <!-- Legal Links -->
+      <div class="footer-legal">
+        <a href="/privacy">Política de privacidade</a>
+        <a href="/exchange">Política de troca de produto</a>
+        <a href="/terms">Termos de uso</a>
+        <a href="/cookies">Política de Cookies</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <p>© 2025 Starbucks Coffee Company. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>
